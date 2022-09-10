@@ -1,0 +1,38 @@
+*{
+    outline:none;
+    margin: auto;
+}
+
+body{
+    background-color: #F7FFF6;
+}
+
+header{
+    background-color: #87D68D;
+}
+
+header h1{
+    text-align: center;
+}
+
+main{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #BCEBCB;
+    border-radius: 10px;
+
+}
+
+.input-container{
+    margin: 5px;
+}
+#userColor{
+    width: 15%;
+}
+
+.form-container button{
+    margin-top: 10px;
+}
