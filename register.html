@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User registration system</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>My user registration system!</h1>
 
         <nav class="nav">
@@ -20,9 +20,17 @@
 
     <main>
         <h2>Register a new user</h2>
+        <div class="flex-btn">
+            <button id="show-btn">👁️</button>
+        </div>
+        
         <div class="form-container">
             <!--Name, age, address, gender, phone, 
                 email, password,color-->
+            <div class="flex-btn">
+                <button id="close-btn">❌</button>
+            </div>
+
             <div class="input-container">
                 <label class="form-label">Email: </label>
                 <input type="text" id="userEmail" class="form-control">
@@ -78,7 +86,7 @@
                     <option value="Paypal">Paypal</option>
                 </select>
             </div>
-            <button onclick="register()" class="btn btn-dark">Register</button>
+            <button class="btn" id="btnSave">Register</button>
         </div>
     </main>
 
@@ -88,6 +96,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js
     "></script>
+    <script src="scripts/storeManager.js"></script>
     <script src="scripts/register.js"></script>
     
 </body>

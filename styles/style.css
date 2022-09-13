@@ -1,38 +1,90 @@
 *{
     outline:none;
-    margin: auto;
+    margin: 0;
 }
-
 body{
-    background-color: #F7FFF6;
+    font-family: arial;
+}
+.flex-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+/*Header section*/
+.site-header{
+    height: 15vh;
+    background-color: #F58A07;
+
 }
 
-header{
-    background-color: #87D68D;
-}
-
-header h1{
+.site-header h1{
+    color: white;
     text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
 }
 
-main{
-    margin-top: 20px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    background-color: #BCEBCB;
-    border-radius: 10px;
+nav{
+    background-color: #084887;
+    padding: 1rem;
+    text-align: right;
+}
 
+nav a{
+    color:black;
+    text-decoration: none;
+    background-color: #909CC2;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+/*Main section*/
+h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.form-container{
+    background-color: #4C72A5;
+    width: 60%;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .input-container{
-    margin: 5px;
-}
-#userColor{
-    width: 15%;
+    display:flex;
+    flex-direction: row;
+    padding: 0.5rem;
 }
 
-.form-container button{
-    margin-top: 10px;
+.input-container label{
+    flex-basis: 20%;
+    text-align: right;
+    margin-right: 0.5rem;
 }
+
+.input-container input{
+    width: 70%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.input-container select{
+    width: 70%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 1rem;
+    border: none;
+    background-color: #4C72A5;
+    border-radius: 10px;
+    font-size: 16px;
+}
+

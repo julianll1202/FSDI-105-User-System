@@ -11,10 +11,22 @@ function User(userName, userLastName, email, password, gender, age, address, pho
     this.phone = phone;
     this.color = color;
     this.paymentMethod = paymentMethod;
+
 }
-//get the values from the inputs
+
+function isValid(aUser){
+    //checks if any property of the object is empty
+    if(aUser.userName == "" || aUser.userLastName=="" || aUser.email == ""|| aUser.password== ""|| aUser.gender==""||aUser.age == ""|| aUser.address==""|| aUser.phone==""|| aUser.color==""|| aUser.paymentMethod==""){
+        //if it is, alert the user
+        alert("Please fill out all the form");
+        return false;
+    }else{
+        return true;
+    }
+}
 
 function register(){
+    //get the values from the inputs
     let txtName = $("#userName").val();
     let txtLastName = $("#userLastName").val();
     let txtEmail = $("#userEmail").val();
@@ -26,13 +38,35 @@ function register(){
     let txtPhone = $("#userPhone").val();
     let txtPayment = $("#userPayment").val();
 
+    
     //create object User
     let newUser = new User(txtName, txtLastName, txtEmail,txtPassword,txtGender,txtAge,txtAddress, txtPhone, txtColor, txtPayment);
     console.log(newUser);
 
+    //validate the user
+    if(isValid(newUser)){
+        //store the user
+        saveUser(newUser);
+        //clear inputs
+        $("input").val("");
+    }
     //clear inputs
-    $("input").val("");
+    
 }
 function init(){
     //hook event
+    $("#btnSave").on("click", register);
+    $("h1").on("click", function(){
+        $("nav").hide();
+    });
+    $(".form-container").hide();
+    $("#show-btn").on("click", function(){
+        $(".form-container").slideDown(500);
+    })
+
+    $("#close-btn").on("click", function(){
+        $(".form-container").slideUp(500);
+    });
 }
+
+window.onload=init;
