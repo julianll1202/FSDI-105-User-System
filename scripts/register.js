@@ -16,7 +16,7 @@ function User(userName, userLastName, email, password, gender, age, address, pho
 
 function isValid(aUser){
     //checks if any property of the object is empty
-    if(aUser.userName == "" || aUser.userLastName=="" || aUser.email == ""|| aUser.password== ""|| aUser.gender==""||aUser.age == ""|| aUser.address==""|| aUser.phone==""|| aUser.color==""|| aUser.paymentMethod==""){
+    if(aUser.userName == "" || aUser.userLastName=="" || aUser.email == ""|| aUser.password== ""){
         //if it is, alert the user
         alert("Please fill out all the form");
         return false;
