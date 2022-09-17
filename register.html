@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User registration system</title>
-    
+    <script src="https://kit.fontawesome.com/356f796502.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
     <header class="site-header">
@@ -21,15 +22,19 @@
     <main>
         <h2>Register a new user</h2>
         <div class="flex-btn">
-            <button id="show-btn">👁️</button>
+            <button id="show-btn"><i class="fa-solid fa-eye"></i></button>
         </div>
         
         <div class="form-container">
+             <div class="flex-btn">
+                <button id="close-btn"><i class="fa-solid fa-xmark"></i> </button>
+            </div>
+            
+            <p id="alert-error" class="hide">
+                Alerts or notifications
+            </p>
             <!--Name, age, address, gender, phone, 
                 email, password,color-->
-            <div class="flex-btn">
-                <button id="close-btn">❌</button>
-            </div>
 
             <div class="input-container">
                 <label class="form-label">Email: </label>
@@ -38,7 +43,7 @@
 
             <div class="input-container">
                 <label class="form-label">Password: </label>
-                <input type="text" id="userPassword" class="form-control">
+                <input type="password" id="userPassword" class="form-control">
             </div>
 
             <div class="input-container">

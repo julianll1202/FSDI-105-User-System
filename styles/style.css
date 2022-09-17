@@ -11,6 +11,20 @@ body{
     justify-content: flex-end;
     margin-right: 15px;
 }
+
+#close-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid black;
+}
+
+#show-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid black;
+}
 /*Header section*/
 .site-header{
     height: 15vh;
@@ -49,7 +63,7 @@ h2{
 }
 
 .form-container{
-    background-color: #4C72A5;
+    background-color: lightblue;
     width: 60%;
     border-radius: 10px;
     padding: 2rem;
@@ -90,10 +104,15 @@ h2{
     font-size: 16px;
 }
 
+.input-error{
+    background-color: rgb(241, 59, 59);
+    border: 1 px solid red;
+}
+
 
 /*User table*/
 .userList{
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,4 +175,34 @@ thead th:nth-child(9){
 }
 thead th:nth-child(10){
     width: 8%;
+}
+
+.hide{
+    display: none;
+}
+
+#alert-error{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff9898;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+
+.login-form input{
+    margin-bottom: 10px;
+}
+
+#loginBtn{
+    width:15%;
+    padding: 5px 2px;
 }
